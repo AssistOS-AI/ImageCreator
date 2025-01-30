@@ -1,0 +1,36 @@
+{
+  "applicationName":"ImageCreator",
+  "version": "0.0.1",
+  "entryPointComponent": "Image-creator",
+  "description": "Create Images",
+  "componentsDirPath": "web-components",
+  "components":[
+    {
+      "name": "image-creator",
+      "presenterClassName": "ImageCreator",
+      "type": "modals"
+    }
+  ],
+  "services": [
+    {
+      "serviceName": "RoutingService",
+      "servicePath": "services/RoutingService.js"
+    }
+  ],
+  "manager": {
+    "path": "manager.js",
+    "name": "Manager"
+  },
+  "plugins": {
+    "abstract": [],
+    "paragraph": [
+      {
+        "name": "Image Creator",
+        "componentName": "image-creator",
+        "icon": "/assets/icons/image.svg",
+        "presenterClassName": "Image"
+      }
+    ]
+  }
+}
+
