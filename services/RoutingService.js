@@ -1,15 +1,15 @@
 export class RoutingService {
     constructor() {}
     async navigateToLocation(locationArray = [], appName) {
-        const VIDEO_CREATOR = "video-creator";
+        const IMAGE_CREATOR = "image-creator";
 
-       if (locationArray.length === 0 || locationArray[0] === VIDEO_CREATOR) {
-            const pageUrl = `${assistOS.space.id}/${appName}/${VIDEO_CREATOR}`;
-            await assistOS.UI.changeToDynamicPage(VIDEO_CREATOR, pageUrl);
+       if (locationArray.length === 0 || locationArray[0] === IMAGE_CREATOR) {
+            const pageUrl = `${assistOS.space.id}/${appName}/${IMAGE_CREATOR}`;
+            await assistOS.UI.changeToDynamicPage(IMAGE_CREATOR, pageUrl);
             return;
         }
-         if(locationArray[locationArray.length-1]!== VIDEO_CREATOR){
-         console.error(`Invalid URL: URL must end with ${VIDEO_CREATOR}`);
+         if(locationArray[locationArray.length-1]!== IMAGE_CREATOR){
+         console.error(`Invalid URL: URL must end with ${IMAGE_CREATOR}`);
             return;
         }
         const webComponentName = locationArray[locationArray.length - 1];
