@@ -24,12 +24,7 @@
   "plugins": {
     "abstract": [],
     "paragraph": [
-      {
-        "name": "Image Creator",
-        "componentName": "image-creator",
-        "icon": "/assets/icons/image.svg",
-        "presenterClassName": "ImageCreator"
-      }
+
     ]
   }
 }
